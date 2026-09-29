@@ -1,0 +1,64 @@
+/*** Importation de polices ***/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/*###################### VARIABLES */
+
+/*** Palette Colormind ***/
+$colormind1: #F3F6F5; // Light shades
+$colormind2: #92A9AC; // Light accent
+$colormind3: #F3A82B; // Main brand color
+$colormind4: #A26B3E; // Dark accent
+$colormind5: #343035; // Dark shades
+
+
+/*** Redéfinition des variables de Bootstrap ***/
+// Couleurs appliquées
+$primary: $colormind3; // Main brand → Primary
+$secondary: $colormind2; // Light accent → Secondary (confirmé par les boutons colormind)
+$light: $colormind1; // Light shades → Light
+$dark: $colormind5; // Dark shades → Dark
+$info: $colormind4;
+
+// Couleurs - États dérivés (hover/active) à partir de la palette
+$primary-hover: darken($primary, 10%);
+$secondary-hover: darken($secondary, 10%);
+
+//Couleurs internationales pour les avertissements
+$success-base: #48b644;
+$warning-base: #c5a60c;
+$danger-base:  #f44336;
+
+// Couleurs - Sémantiques teintées avec la palette, tout en restant reconnaissables
+$success: mix($success-base, $primary, 70%);
+$warning: mix($warning-base, $info, 75%);
+$danger:  mix($danger-base, $dark, 80%);
+
+// Polices
+
+// Entêtes
+$headings-font-family: 'Syne', sans-serif;
+$headings-font-weight: 700;
+$headings-color: $primary;
+$headings-line-height: 1.2;
+
+// Texte courant
+$font-family-base: 'Syne', sans-serif;
+$font-size-base: 1rem; // 16px, valeur de référence Bootstrap
+$line-height-base: 1.6; // Interligne plus aéré pour la lisibilité du texte courant
+
+
+/*###################### BOOTSTRAP */
+@import "partials/bootstrap";
+
+
+/*###################### STYLES PERSONNALISÉS */
+
+//Fonds de sections
+.theme-dark {
+    background-color: $dark;
+    color: $light;
+}
+
