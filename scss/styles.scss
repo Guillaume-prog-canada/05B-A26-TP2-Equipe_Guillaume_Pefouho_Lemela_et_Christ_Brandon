@@ -7,11 +7,11 @@
 /*###################### VARIABLES */
 
 /*** Palette Colormind ***/
-$colormind1: #F3F6F5; // Light shades
-$colormind2: #92A9AC; // Light accent
-$colormind3: #F3A82B; // Main brand color
-$colormind4: #A26B3E; // Dark accent
-$colormind5: #343035; // Dark shades
+$colormindNoir: #000000; // Light shades
+$colormindBlanc: #F1F9F1; // Light accent
+$colormindVert: #619E45; // Main brand color
+$colormindFvert: #304A4F; // Dark accent
+$colormindGris: #2B2F2E; // Dark shades
 
 
 /*** Redéfinition des variables de Bootstrap ***/
@@ -49,6 +49,13 @@ $font-family-base: 'Syne', sans-serif;
 $font-size-base: 1rem; // 16px, valeur de référence Bootstrap
 $line-height-base: 1.6; // Interligne plus aéré pour la lisibilité du texte courant
 
+  $font-family-baseD: "Zain", sans-serif;
+  header{
+    font-family: $font-family-baseD;
+  }
+
+
+
 
 /*###################### BOOTSTRAP */
 @import "partials/bootstrap";
@@ -62,3 +69,4 @@ $line-height-base: 1.6; // Interligne plus aéré pour la lisibilité du texte c
     color: $light;
 }
 
+fon
