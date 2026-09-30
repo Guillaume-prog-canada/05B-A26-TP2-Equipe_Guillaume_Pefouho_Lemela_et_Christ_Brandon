@@ -7,20 +7,20 @@
 /*###################### VARIABLES */
 
 /*** Palette Colormind ***/
-$colormind1: #F3F6F5; // Light shades
-$colormind2: #92A9AC; // Light accent
-$colormind3: #F3A82B; // Main brand color
-$colormind4: #A26B3E; // Dark accent
-$colormind5: #343035; // Dark shades
+$colormindNoir: #000000; // Light shades
+$colormindBlanc: #F1F9F1; // Light accent
+$colormindVert: #619E45; // Main brand color
+$colormindFvert: #304A4F; // Dark accent
+$colormindGris: #2B2F2E; // Dark shades
 
 
 /*** Redéfinition des variables de Bootstrap ***/
 // Couleurs appliquées
-$primary: $colormind3; // Main brand → Primary
-$secondary: $colormind2; // Light accent → Secondary (confirmé par les boutons colormind)
-$light: $colormind1; // Light shades → Light
-$dark: $colormind5; // Dark shades → Dark
-$info: $colormind4;
+$primary: $colormindVert;
+$secondary: $colormindBlanc;
+$light: $colormindBlanc;
+$dark: $colormindGris;
+$info: $colormindFvert;
 
 // Couleurs - États dérivés (hover/active) à partir de la palette
 $primary-hover: darken($primary, 10%);
@@ -29,12 +29,12 @@ $secondary-hover: darken($secondary, 10%);
 //Couleurs internationales pour les avertissements
 $success-base: #48b644;
 $warning-base: #c5a60c;
-$danger-base:  #f44336;
+$danger-base: #f44336;
 
 // Couleurs - Sémantiques teintées avec la palette, tout en restant reconnaissables
 $success: mix($success-base, $primary, 70%);
 $warning: mix($warning-base, $info, 75%);
-$danger:  mix($danger-base, $dark, 80%);
+$danger: mix($danger-base, $dark, 80%);
 
 // Polices
 
@@ -49,6 +49,14 @@ $font-family-base: 'Syne', sans-serif;
 $font-size-base: 1rem; // 16px, valeur de référence Bootstrap
 $line-height-base: 1.6; // Interligne plus aéré pour la lisibilité du texte courant
 
+$font-family-baseD: "Zain", sans-serif;
+
+header {
+    font-family: $font-family-baseD;
+}
+
+
+
 
 /*###################### BOOTSTRAP */
 @import "partials/bootstrap";
@@ -61,21 +69,28 @@ $line-height-base: 1.6; // Interligne plus aéré pour la lisibilité du texte c
     background-color: black;
     color: $light;
 }
+
 //Style css header
-.header{
+.header {
     @extend .bg-dark;
+    @extend .p-2;
+}
+.premiere-partie{
+    // @extend .border-bottom;
+    // @extend .border-1;
+    @extend .align-items-center;
+    @extend .p-2;
+    @extend .shadow;
 }
 
-.header-f{
-    @extend .border-bottom;
-    @extend .border-1;
+.header-f {
     @extend .border-white;
     @extend .row;
     @extend .align-items-center;
     @extend .gx-4;
 }
 
-.action{
+.action {
     @extend .text-white;
     @extend .text-decoration-none;
     @extend .link-warning;
@@ -83,24 +98,37 @@ $line-height-base: 1.6; // Interligne plus aéré pour la lisibilité du texte c
     @extend .rounded;
 }
 
-.action:hover{
-    background: $colormind3;
+.action:hover {
+
     @extend .text-white;
     @extend .p-2;
-    background: $colormind4;
+    background: $colormindNoir;
 }
-.navbar-brand{
+
+.navbar-brand {
     letter-spacing: -2px;
 }
 
 .fond_section_primaire {
-    @extend .bg-primary ;
-    @extend .text-light ;
-    @extend .p-3 ;
+    @extend .bg-primary;
+    @extend .text-light;
+    @extend .p-3;
     @extend .shadow;
-    
+
 }
 
-.header-menu{
+.header-menu {
     @extend .p-2;
+}
+
+nav ul > li > a{
+   @extend .nav-link;
+   @extend .text-white;
+   @extend .text-decoration-none;
+   @extend .rounded;
+}
+
+nav ul > li > a:hover{
+      @extend .text-white;
+     background: $colormindNoir;
 }
