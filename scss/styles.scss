@@ -58,7 +58,49 @@ $line-height-base: 1.6; // Interligne plus aéré pour la lisibilité du texte c
 
 //Fonds de sections
 .theme-dark {
-    background-color: $dark;
+    background-color: black;
     color: $light;
 }
+//Style css header
+.header{
+    @extend .bg-dark;
+}
 
+.header-f{
+    @extend .border-bottom;
+    @extend .border-1;
+    @extend .border-white;
+    @extend .row;
+    @extend .align-items-center;
+    @extend .gx-4;
+}
+
+.action{
+    @extend .text-white;
+    @extend .text-decoration-none;
+    @extend .link-warning;
+    @extend .p-2;
+    @extend .rounded;
+}
+
+.action:hover{
+    background: $colormind3;
+    @extend .text-white;
+    @extend .p-2;
+    background: $colormind4;
+}
+.navbar-brand{
+    letter-spacing: -2px;
+}
+
+.fond_section_primaire {
+    @extend .bg-primary ;
+    @extend .text-light ;
+    @extend .p-3 ;
+    @extend .shadow;
+    
+}
+
+.header-menu{
+    @extend .p-2;
+}
