@@ -7,11 +7,13 @@
 /*###################### VARIABLES */
 
 /*** Palette Colormind ***/
-$colormindNoir: #000000; // Light shades
+$colormindNoir: #2B2F2E; // Light shades
 $colormindBlanc: #F1F9F1; // Light accent
 $colormindVert: #619E45; // Main brand color
 $colormindFvert: #304A4F; // Dark accent
-$colormindGris: #2B2F2E; // Dark shades
+
+
+$colormindGris: #000000; // Dark shades
 
 
 /*** Redéfinition des variables de Bootstrap ***/
@@ -39,17 +41,17 @@ $danger: mix($danger-base, $dark, 80%);
 // Polices
 
 // Entêtes
-$headings-font-family: 'Syne', sans-serif;
+$headings-font-family: 'Zain', sans-serif;
 $headings-font-weight: 700;
 $headings-color: $primary;
 $headings-line-height: 1.2;
 
 // Texte courant
-$font-family-base: 'Syne', sans-serif;
+$font-family-base: 'Nunito', sans-serif;
 $font-size-base: 1rem; // 16px, valeur de référence Bootstrap
 $line-height-base: 1.6; // Interligne plus aéré pour la lisibilité du texte courant
 
-$font-family-baseD: "Zain", sans-serif;
+
 
 header {
     font-family: $font-family-baseD;
