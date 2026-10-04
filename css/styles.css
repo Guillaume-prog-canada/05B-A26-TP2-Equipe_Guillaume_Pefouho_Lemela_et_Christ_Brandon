@@ -7264,7 +7264,7 @@ nav .nav-justified .nav-item ul > li > a {
   display: table-cell !important;
 }
 
-.d-flex {
+.d-flex, .dr-carte {
   display: flex !important;
 }
 
@@ -7408,7 +7408,7 @@ nav .nav-justified .nav-item ul > li > a {
   border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
-.border-0 {
+.border-0, .carte-menu {
   border: 0 !important;
 }
 
@@ -7710,7 +7710,7 @@ nav .nav-justified .nav-item ul > li > a {
   align-items: flex-end !important;
 }
 
-.align-items-center {
+.align-items-center, .dr-carte {
   align-items: center !important;
 }
 
@@ -8288,7 +8288,7 @@ nav .nav-justified .nav-item ul > li > a {
   font-size: 1.25rem !important;
 }
 
-.fs-6, .texte-mission {
+.fs-6, .carte-menu > .card-body > .card-text, .texte-mission {
   font-size: 1rem !important;
 }
 
@@ -8332,7 +8332,7 @@ nav .nav-justified .nav-item ul > li > a {
   line-height: 1 !important;
 }
 
-.lh-sm {
+.lh-sm, .carte-menu > .card-body > .card-text {
   line-height: 1.25 !important;
 }
 
@@ -8352,7 +8352,7 @@ nav .nav-justified .nav-item ul > li > a {
   text-align: right !important;
 }
 
-.text-center {
+.text-center, .dr-carte {
   text-align: center !important;
 }
 
@@ -8430,7 +8430,7 @@ nav .nav-justified .nav-item ul > li > a {
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-dark, .titre-mission {
+.text-dark, .card > .row > .dr-carte > .card-body > .card-text > .btn:hover, .titre-mission {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
@@ -8725,7 +8725,7 @@ nav .nav-justified .nav-item ul > li > a {
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-dark, .header {
+.bg-dark, .card > .row > .dr-carte > .card-body > .card-text > .btn, .header {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -8735,7 +8735,7 @@ nav .nav-justified .nav-item ul > li > a {
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-white, .btn:hover {
+.bg-white, .card > .row > .dr-carte > .card-body > .card-text > .btn:hover, .btn:hover {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -8840,7 +8840,7 @@ nav .nav-justified .nav-item ul > li > a {
   border-radius: var(--bs-border-radius) !important;
 }
 
-.rounded-0 {
+.rounded-0, .card > .row > .dr-carte > .card-body > .card-text > .btn, .card > img, .carte-menu > .card-body > .btn, .carte-menu > img, .carte-menu {
   border-radius: 0 !important;
 }
 
@@ -11893,6 +11893,19 @@ nav ul > li > a:hover {
 
 /*######################  FIN STYLES PERSONNALISÉS HEADER */
 /*######################  DEBUT STYLES PERSONNALISÉS PAGE ACCEUIL */
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.791);
+}
+
 .carousel-item img {
   width: 100%;
   height: 400px;
@@ -11900,4 +11913,40 @@ nav ul > li > a:hover {
   object-position: center;
 }
 
-/*######################  FIN STYLES PERSONNALISÉS PAGE ACCEUIL *//*# sourceMappingURL=styles.css.map */
+.carousel-caption > h3, .carousel-caption > .h3 {
+  color: #304A4F;
+}
+
+/*######################  FIN STYLES PERSONNALISÉS PAGE ACCEUIL */
+/*######################  DEBUT STYLES PERSONNALISÉS SECTION MENU */
+.carte-menu {
+  overflow: hidden;
+}
+
+.carte-menu > img {
+  transition: transform 0.3s ease;
+}
+
+.carte-menu > img:hover {
+  transform: scale(1.1);
+}
+
+.carte-menu > .card-body > .btn {
+  background-color: #2B2F2E;
+}
+
+/*######################  FIN STYLES PERSONNALISÉS SECTION MENU */
+/*######################  DEBUT STYLES PERSONNALISÉS SECTION BANNIERE */
+.card > .row > .col-md-6:first-child {
+  overflow: hidden;
+}
+
+.card > .row > .col-md-6:first-child > img {
+  transition: transform 0.3s ease;
+}
+
+.card > .row > .col-md-6:first-child > img:hover {
+  transform: scale(1.1);
+}
+
+/*######################  FIN STYLES PERSONNALISÉS SECTION BANNIERE *//*# sourceMappingURL=styles.css.map */

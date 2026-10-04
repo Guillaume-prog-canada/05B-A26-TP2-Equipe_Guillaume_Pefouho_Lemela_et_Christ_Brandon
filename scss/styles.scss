@@ -110,6 +110,19 @@ nav ul>li>a:hover {
 /*######################  FIN STYLES PERSONNALISÉS HEADER */
 
 /*######################  DEBUT STYLES PERSONNALISÉS PAGE ACCEUIL */
+.carousel-item{
+    position: relative;
+}
+
+.carousel-item::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.791);
+}
+
 .carousel-item img {
     width: 100%;
     height: 400px;
@@ -137,5 +150,74 @@ nav ul>li>a:hover {
     @extend .fw-bold;
     @extend .text-dark;
 }
+.carousel-caption>h3{
+    color: $colormindFvert;
+}
+
 
 /*######################  FIN STYLES PERSONNALISÉS PAGE ACCEUIL */
+
+
+/*######################  DEBUT STYLES PERSONNALISÉS SECTION MENU */
+.carte-menu{
+    @extend .border-0;
+    @extend .rounded-0;
+    overflow: hidden;
+}
+
+.carte-menu>img{
+    @extend .rounded-0;
+     transition: transform 0.3s ease;
+}
+
+
+.carte-menu>img:hover{
+    transform: scale(1.1);
+}
+
+.carte-menu> .card-body> .btn{
+    background-color: $colormindGris;
+    @extend .rounded-0;
+}
+
+.carte-menu> .card-body> .card-text{
+    @extend .fs-6;
+    @extend .lh-sm;
+}
+/*######################  FIN STYLES PERSONNALISÉS SECTION MENU */
+
+/*######################  DEBUT STYLES PERSONNALISÉS SECTION BANNIERE */
+.dr-carte{
+    @extend .text-center;
+    @extend .d-flex;
+    @extend .align-items-center;
+
+}
+
+.card > .row > .col-md-6:first-child {
+    overflow: hidden;
+}
+
+.card > .row > .col-md-6:first-child > img {
+    transition: transform 0.3s ease;
+}
+
+.card > .row > .col-md-6:first-child > img:hover {
+    transform: scale(1.1);
+}
+
+.card>img{
+    @extend .rounded-0;
+}
+
+.card > .row > .dr-carte > .card-body > .card-text > .btn{
+    @extend .bg-dark;
+   @extend .rounded-0;
+}
+
+.card > .row > .dr-carte > .card-body > .card-text > .btn:hover {
+    @extend .bg-white;
+    @extend .text-dark;
+}
+/*######################  FIN STYLES PERSONNALISÉS SECTION BANNIERE */
+
