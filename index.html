@@ -16,141 +16,137 @@
     <title>Recettes Santé</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100 bg-info">
+<body class="d-flex flex-column min-vh-100">
     <header class="header">
-        <nav aria-label="Navigation principale">
-        <div class="premiere-partie">
-            <div class="container">
-                <div class="header-f">
-
-                    <!-- Logo -->
-                    <div class="col-md-3">
-                        <div class="header-logo">
-                            <h1>
-                            <a href="#" class="navbar-brand fs-2 text-white">
-                                RecetteSanté
-                            </a>
-                            </h1>
-                        </div>
-                    </div>
-
-                    <!-- Recherche -->
-                    <div class="col-md-4">
-                        <div class="header-search">
-
-                            <form role="search" class="d-flex">
-
-                                <label for="recherche" class="visually-hidden">
-                                    Rechercher une recette
-                                </label>
-
-                                <input type="search" id="recherche" name="recherche" class="form-control"
-                                    placeholder="Rechercher une recette...">
-
-
-
-                            </form>
-
-                        </div>
-                    </div>
-
-                    <!-- Actions -->
-                    <div class="col-md-5 ">
-                        <div class="header-actions">
-
-                            <div class="d-flex gap-4">
-
-                                <a href="#" class="action ">
-                                    Menu du jour
-                                </a>
-
-                                <a href="#" class="action">
-                                    Promotion
-                                </a>
-
-                                <a href="#" class="action">
-                                    Coupon du jour
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
         <div class="container">
-
-            <div class="row align-items-center gx-4">
-
-
-                <div class="row">
-
-                    <div class="col-12">
-                        <ul class="nav d-flex justify-content-center gap-4">
-
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid gap-4">
+                    <a class="logo" href="#">RecetteSante</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3x">
                             <li class="nav-item">
-                                <a href="#" >
-                                    Accueil
-                                </a>
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
-
                             <li class="nav-item">
-                                <a href="#" >
-                                    Recettes
-                                </a>
+                                <a class="nav-link" href="#">Abonnement</a>
                             </li>
-
                             <li class="nav-item">
-                                <a href="#" >
-                                    Catégories
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#" >
-                                    Conseils santé
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#" >
-                                    À propos
-                                </a>
+                                <a class="nav-link" href="#">Galerie Recette</a>
                             </li>
 
                         </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Rechercher..."
+                                aria-label="Search" />
+                            <button class="btn btn-outline-success  " type="submit">Search</button>
+                        </form>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
 
-        </div>
-        </nav>
     </header>
     <main class="flex-grow-1">
 
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/beautiful-vibrant-shot-of-traditional-korean-meals-TaVxXBNOT2bmPAOAqvjyo.webp"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <button type="button" class="btn btn-recette">Voir la recette</button>
+                        <button type="button" class="btn btn-abonnement">Abonnement</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/colorful-breakfast-bowl-with-eggs-and-vegetables-McOhlncMl7y2DrFjwrEpB.webp"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                        <button type="button" class="btn btn-recette">Voir la recette</button>
+                        <button type="button" class="btn btn-abonnement">Abonnement</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/korean-meal-from-above-TGteg909pYM2c_zLFPaxu.webp"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                        <button type="button" class="btn btn-recette">Voir la recette</button>
+                        <button type="button" class="btn btn-abonnement">Abonnement</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
 
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center g-4">
+
+                    <div class="col-md-4">
+                        <h2 class="titre-mission">
+                            BIEN MANGER, MIEUX VIVRE
+                        </h2>
+                    </div>
+
+                    <div class="col-md-8">
+                        <p class=" texte-mission ">
+                            Nous proposons des recettes saines, savoureuses et faciles à préparer pour toute la famille.
+                            Notre objectif est de vous aider à adopter une alimentation équilibrée avec des ingrédients
+                            simples et accessibles. Découvrez des idées variées pour préparer facilement de bons repas
+                            au quotidien.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="fond_section_primaire">
         <div class="container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iste nobis quibusdam beatae ipsa quo
-                facere
-                nesciunt laudantium nemo, recusandae natus nostrum? At alias quisquam possimus suscipit ratione vel
-                voluptatibus.</p>
+
         </div>
+
     </footer>
 
-    <!-----------------------------------------------------------------------------------
-        Si on a besoin des éléments interactifs de Bootstrap, on doit utiliser au minimum
-        le 2e script suivant (bootstrap.min.js) et parfois le 1er en plus (Popper)
-        intégrés dans cet ordre.
-    ---------------------------------------------------------------------------------->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>    
-    -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
