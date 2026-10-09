@@ -67,6 +67,8 @@ corrections responsive/accessibilité de ses pages
  
  #ÉQUIPE: D  gr5
 
+# GITHUB : https://github.com/Guillaume-prog-canada/05B-A26-TP2-Equipe_Guillaume_Pefouho_Lemela_et_Christ_Brandon.git
+
 #DISCUSSIONS: Teams
 
 ###COMPOSANTS BT5:
