@@ -17,247 +17,364 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-
-
+    <header class=" header sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid gap-5">
+                    <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                        <h1 class="fs-3 m-0">RecetteSante</h1>
+                        <img src="images/logo2.png" alt="" width="55" height="55">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Ouvrir ou fermer le menu de navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Formulaire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galerie.html">Galerie</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Rechercher une recette..."
+                                aria-label="Rechercher une recette" />
+                            <button class="btn btn-outline-success  " type="submit">Rechercher</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
     <main>
 
 
-<div class="container bg-light p-5">
-    
-    <div class="row">
-        <form class="col-md-6 mx-auto m-5 text-center" method="post"
-            action="https://www.formtester.goodbytes.be/post.php">
-
-            <h1 class="text-center">Soumettre une recette </h1>
+        <div class="container bg-light p-5">
 
             <div class="row">
+                <form class="col-md-6 mx-auto m-5 text-center" method="post"
+                    action="https://www.formtester.goodbytes.be/post.php">
 
-            
-                <div class="col-md-6 ">
+                    <h1 class="text-center">Soumettre une recette </h1>
 
-                    <div class="row align-items-center mb-3">
-                        <div class="col-md-3">
-                            <label class="form-label" for="nom">Nom: </label>
-                        </div>
-                        <div class="col-md-9">
-                            <input class="form-control" type="text" name="nom" id="nom"
-                                required="required" >
-                        </div>
-                    </div>
+                    <div class="row">
 
-                    <div class="row align-items-center mb-3">
-                        <div class="col-md-3">
-                            <label class="form-label" for="courriel">Courriel: </label>
-                        </div>
-                        <div class="col-md-9">
-                            <input class="form-control" type="email" name="courriel" id="courriel" >
-                        </div>
-                    </div>
 
-                    <div class="row align-items-center mb-3">
-                        <div class="col-md-3">
-                            <label class="form-label" for="recette">recette: </label>
-                        </div>
-                        <div class="col-md-9">
-                            <input class="form-control" type="text" name="recette" id="recette" >
-                        </div>
-                    </div>
+                        <div class="col-md-6 ">
 
-                    <div class="row mb-3">
-                        <div class="col-md-3">
-                            <label class="form-label" for="temps">Duree :</label>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="input-group">
-                                <input type="number" class="form-control" name="temps" id="temps">
-                                <span class="input-group-text">minutes</span>
+                            <div class="row align-items-center mb-3">
+                                <div class="col-md-3">
+                                    <label class="form-label" for="nom">Nom: </label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="form-control" type="text" name="nom" id="nom" required="required">
+                                </div>
                             </div>
-                        </div>
-                       
 
-                      
+                            <div class="row align-items-center mb-3">
+                                <div class="col-md-3">
+                                    <label class="form-label" for="courriel">Courriel: </label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="form-control" type="email" name="courriel" id="courriel">
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-3">
+                                <div class="col-md-3">
+                                    <label class="form-label" for="recette">recette: </label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="form-control" type="text" name="recette" id="recette">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <label class="form-label" for="temps">Duree :</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" name="temps" id="temps">
+                                        <span class="input-group-text">minutes</span>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <label class="form-label" for="lst_categorie">Categorie: </label>
+                                </div>
+                                <div class="col-md-9">
+                                    <select class="form-select" name="lst_categorie" id="lst_categorie">
+                                        <option disabled="disabled" selected="selected" value="nil">
+                                            --- Votre choix ---
+                                        </option>
+                                        <option value="cb">Végétarien</option>
+                                        <option value="al">Viande</option>
+                                        <option value="sa">Poisson</option>
+                                        <option value="vegan">Végane</option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="instructions">
+                                    Instructions supplémentaires :
+                                </label>
+
+                                <textarea class="form-control" name="instructions" id="instructions"
+                                    rows="8"></textarea>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-md-6">
+
+
+
+
+                            <fieldset class="mb-4">
+                                <legend>Type de repas</legend>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="type" id="type-dejeuner"
+                                        value="m">
+                                    <label class="form-check-label" for="type-dejeuner">
+                                        Déjeuner
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="type" id="type-dinner" value="c">
+                                    <label class="form-check-label" for="type-dinner">
+                                        Dîner
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="type" id="type-souper" value="a">
+                                    <label class="form-check-label" for="type-souper">
+                                        Souper
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="type" id="type-dessert" value="m"
+                                        checked="checked">
+                                    <label class="form-check-label" for="type-dessert">
+                                        Dessert
+                                    </label>
+                                </div>
+                            </fieldset>
+
+
+                            <fieldset class="mb-4">
+                                <legend>Niveau de Difficulté</legend>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficulte"
+                                        id="difficulte_facile" value="f" checked="checked">
+                                    <label class="form-check-label" for="difficulte_facile">
+                                        Facile
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficulte" id="difficulte_moyen"
+                                        value="m">
+                                    <label class="form-check-label" for="difficulte_moyen">
+                                        Moyen
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficulte"
+                                        id="difficulte_difficile" value="d">
+                                    <label class="form-check-label" for="difficulte_difficile">
+                                        Difficile
+                                    </label>
+                                </div>
+                            </fieldset>
+
+
+                            <fieldset class="mb-4">
+                                <legend>Allergènes</legend>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="allergenes"
+                                        id="allergenes-noix" value="noix">
+                                    <label class="form-check-label" for="allergenes-noix">
+                                        Noix
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="allergenes"
+                                        id="allergenes-lait" value="lait">
+                                    <label class="form-check-label" for="allergenes-lait">
+                                        Lait
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="allergenes"
+                                        id="allergenes-oeufs" value="oeufs">
+                                    <label class="form-check-label" for="allergenes-oeufs">
+                                        Oeufs
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="allergenes"
+                                        id="allergenes-gluten" value="gluten">
+                                    <label class="form-check-label" for="allergenes-gluten">
+                                        Gluten
+                                    </label>
+                                </div>
+                            </fieldset>
+
+
+                            <!-- Boutons du côté le plus court -->
+                            <div class="text-center mt-5">
+                                <input type="reset" class="btn btn-primary">
+                                <input type="submit" class="btn btn-primary">
+                            </div>
+
+                        </div>
+
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-md-3">
-                            <label class="form-label" for="lst_categorie">Categorie: </label>
-                        </div>
-                        <div class="col-md-9">
-                            <select class="form-select" name="lst_categorie" id="lst_categorie">
-                            <option disabled="disabled" selected="selected" value="nil">
-                                --- Votre choix ---
-                            </option>
-                            <option value="cb">Végétarien</option>
-                            <option value="al">Viande</option>
-                            <option value="sa">Poisson</option>
-                            <option value="vegan">Végane</option>
-                        </select>
-                        </div>
 
-                        
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label" for="instructions">
-                            Instructions supplémentaires :
-                        </label>
-
-                        <textarea class="form-control" name="instructions" id="instructions"
-                            rows="8"></textarea>
-                    </div>
-
-                </div>
-
-
-          
-                <div class="col-md-6">
-
-                    
-
-
-                    <fieldset class="mb-4">
-                        <legend>Type de repas</legend>
-                        
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="type"
-                                id="type-dejeuner" value="m" >
-                            <label class="form-check-label" for="type-dejeuner">
-                                Déjeuner
-                            </label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="type"
-                                id="type-dinner" value="c" >
-                            <label class="form-check-label" for="type-dinner">
-                                Dîner
-                            </label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="type"
-                                id="type-souper" value="a" >
-                            <label class="form-check-label" for="type-souper">
-                                Souper
-                            </label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="type"
-                                id="type-dessert" value="m" checked="checked" >
-                            <label class="form-check-label" for="type-dessert">
-                                Dessert
-                            </label>
-                        </div>
-                    </fieldset>
-
-
-                    <fieldset class="mb-4">
-                        <legend>Niveau de Difficulté</legend>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="difficulte"
-                                id="difficulte_facile" value="f" checked="checked" >
-                            <label class="form-check-label" for="difficulte_facile">
-                                Facile
-                            </label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="difficulte"
-                                id="difficulte_moyen" value="m" >
-                            <label class="form-check-label" for="difficulte_moyen">
-                                Moyen
-                            </label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="difficulte"
-                                id="difficulte_difficile" value="d" >
-                            <label class="form-check-label" for="difficulte_difficile">
-                                Difficile
-                            </label>
-                        </div>
-                    </fieldset>
-
-
-                    <fieldset class="mb-4">
-                        <legend>Allergènes</legend>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox"
-                                name="allergenes" id="allergenes-noix" value="noix">
-                            <label class="form-check-label" for="allergenes-noix">
-                                Noix
-                            </label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox"
-                                name="allergenes" id="allergenes-lait" value="lait">
-                            <label class="form-check-label" for="allergenes-lait">
-                                Lait
-                            </label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox"
-                                name="allergenes" id="allergenes-oeufs" value="oeufs">
-                            <label class="form-check-label" for="allergenes-oeufs">
-                                Oeufs
-                            </label>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox"
-                                name="allergenes" id="allergenes-gluten" value="gluten">
-                            <label class="form-check-label" for="allergenes-gluten">
-                                Gluten
-                            </label>
-                        </div>
-                    </fieldset>
-
-
-                    <!-- Boutons du côté le plus court -->
-                    <div class="text-center mt-5">
-                        <input type="reset" class="btn btn-primary" >
-                        <input type="submit" class="btn btn-primary" >
-                    </div>
-
-                </div>
-
+                </form>
             </div>
-
-        </form>
-    </div>
-</div>
+        </div>
 
 
 
     </main>
 
 
+    <footer class="bg-dark text-white">
+        <div class="container py-5">
 
+            <div class="row">
 
+                <!-- Logo / description -->
+                <div class="col-md-4">
+                    <h2 class="h4">RecetteSanté <img src="images/logo2.png" alt="" width="55" height="55"></h2>
 
+                    <p>
+                        Des recettes accessibles, des menus équilibrés et des idées gourmandes
+                        pour vous accompagner vers une alimentation variée au quotidien.
+                    </p>
+                </div>
 
+                <!-- Liens -->
+                <div class="col-md-4">
+                    <h2 class="h5">Explorez notre site</h2>
 
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-white">
+                                Accueil
+                            </a>
+                        </li>
 
-   
-     
+                        <li>
+                            <a href="#" class="text-white">
+                                Nos recettes
+                            </a>
+                        </li>
 
+                        <li>
+                            <a href="#" class="text-white">
+                                Nos menus
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- Contact -->
+                <div class="col-md-4">
+                    <h2 class="h5">Contactez-nous</h2>
+                    <p class="mb-1">Québec, Canada</p>
+                    <p class="mb-1"><i class="bi bi-telephone-forward"></i> 418-000-0000</p>
+                    <p><i class="bi bi-envelope"></i> info@recettessante.ca</p>
+                </div>
 
-   
-       
+            </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-            crossorigin="anonymous"></script>
-     
+            <hr>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0">
+                    © 2026 Recettes Santé — Guillaume Pefouho Lemela et Christ Brandon Kengne
+                </p>
+
+                <ul class="d-flex gap-3 list-unstyled mb-0">
+                    <li>
+                        <a href="#" class="text-white" aria-label="Facebook">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-white" aria-label="YouTube">
+                            <i class="bi bi-caret-right-square-fill" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-white" aria-label="Messenger">
+                            <i class="bi bi-messenger" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-white" aria-label="X (Twitter)">
+                            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-white" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-white" aria-label="Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+<a href="#" class="btn btn-retour-haut rounded-circle position-fixed bottom-0 end-0 m-4" aria-label="Retour en haut">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+</a>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
 </body>
-
 
 </html>

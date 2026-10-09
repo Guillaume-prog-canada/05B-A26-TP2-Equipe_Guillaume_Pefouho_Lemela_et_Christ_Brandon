@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -17,40 +18,42 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <header class=" header sticky-top >
+    <header class=" header sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid gap-4">
-                    <a class="logo" href="#">RecetteSante</a>
+                <div class="container-fluid gap-5">
+                    <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                        <h1 class="fs-3 m-0">RecetteSante</h1>
+                        <img src="images/logo2.png" alt="" width="55" height="55">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Ouvrir ou fermer le menu de navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3x">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="formulaire.html">Soumettre une recette </a>
+                                <a class="nav-link" href="formulaire.html">Formulaire</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="galerie.html">Galerie Recette</a>
+                                <a class="nav-link" href="galerie.html">Galerie</a>
                             </li>
-
                         </ul>
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Rechercher..."
-                                aria-label="Search" />
-                            <button class="btn btn-outline-success  " type="submit">Search</button>
+                            <input class="form-control me-2" type="search" placeholder="Rechercher une recette..."
+                                aria-label="Rechercher une recette" />
+                            <button class="btn btn-outline-success  " type="submit">Rechercher</button>
                         </form>
                     </div>
                 </div>
             </nav>
         </div>
-
     </header>
+
     <main class="flex-grow-1">
 
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -66,48 +69,48 @@
                 <div class="carousel-item active">
                     <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/kimchi-in-a-white-bowl-close-up-klnYHdpQm5bJjw7LSOtLQ.webp"
                         class="d-block w-100" alt="...">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                     <div class="carousel-caption  d-md-block">
-                        <h3>First slide label</h3>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h3>Des saveurs saines à découvrir</h3>
+                        <p>Découvrez des recettes savoureuses qui allient plaisir, simplicité et équilibre.</p>
                         <button type="button" class="btn btn-recette">Voir la recette</button>
-                        <button type="button" class="btn btn-abonnement">Abonnement</button>
+                        <button type="button" class="btn btn-abonnement">Découvrir nos menus</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-
                     <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/colorful-breakfast-bowl-with-eggs-and-vegetables-McOhlncMl7y2DrFjwrEpB.webp"
                         class="d-block w-100" alt="...">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                     <div class="carousel-caption  d-md-block">
-
-                        <h3>Second slide label</h3>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h3>Commencez la journée du bon pied</h3>
+                        <p>Faites le plein d'énergie avec des petits-déjeuners colorés et équilibrés.</p>
                         <button type="button" class="btn btn-recette">Voir la recette</button>
-                        <button type="button" class="btn btn-abonnement">Abonnement</button>
+                        <button type="button" class="btn btn-abonnement">Découvrir nos menus</button>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/korean-meal-from-above-TGteg909pYM2c_zLFPaxu.webp"
                         class="d-block w-100" alt="...">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
                     <div class="carousel-caption  d-md-block">
-                        <h3>Third slide label</h3>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h3>Le plaisir de bien manger</h3>
+                        <p>Explorez des idées de repas variés pour régaler toute la famille au quotidien.</p>
                         <button type="button" class="btn btn-recette">Voir la recette</button>
-                        <button type="button" class="btn btn-abonnement">Abonnement</button>
+                        <button type="button" class="btn btn-abonnement">Découvrir nos menus</button>
                     </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Diapositive précédente</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Diapositive suivante</span>
             </button>
         </div>
-
 
         <section class="py-5 bg-light">
             <div class="container">
@@ -121,31 +124,31 @@
 
                     <div class="col-md-8">
                         <p class=" texte-mission ">
-                            Nous proposons des recettes saines, savoureuses et faciles à préparer pour toute la famille.
-                            Notre objectif est de vous aider à adopter une alimentation équilibrée avec des ingrédients
-                            simples et accessibles. Découvrez des idées variées pour préparer facilement de bons repas
-                            au quotidien.
+                            Chez RecetteSanté, nous croyons qu'une alimentation équilibrée commence par des repas
+                            simples, frais et savoureux. Nous vous proposons des idées accessibles pour cuisiner
+                            au quotidien, découvrir de nouvelles saveurs et prendre soin de vous sans renoncer
+                            au plaisir de manger.
                         </p>
                     </div>
-
                 </div>
             </div>
         </section>
+
         <section class="py-5">
             <div class="container">
-                <h2>Nos recettes</h2>
+                <h2>Nos recettes à découvrir</h2>
                 <div class="row md-4">
                     <div class="col-md-4">
                         <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/assorted-sushi-platter-with-shrimp-and-salmon-kHY_UC_FNpClDnnQR1iDA.webp"
-                            class="img-fluid rounded" alt="Recette saine">
+                            class="img-fluid rounded" alt="Assortiment de sushis au saumon et aux crevettes">
                     </div>
                     <div class="col-md-4">
                         <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/perfect-appetizers-in-a-restaurant-uo3CO261y-ezUsIvtdxqj.webp"
-                            class="img-fluid rounded" alt="Repas équilibré">
+                            class="img-fluid rounded" alt="Assortiment de petites bouchées à partager">
                     </div>
                     <div class="col-md-4">
                         <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/colorful-sushi-roll-held-with-chopsticks-lz7wyWcXA1PUXVwFHipPQ.webp"
-                            class="img-fluid rounded" alt="Plat santé">
+                            class="img-fluid rounded" alt="Sushis colorés dégustés avec des baguettes">
                     </div>
                 </div>
             </div>
@@ -154,44 +157,38 @@
         <section class="py-5 bg-light">
             <div class="container">
                 <div class="row align-items-center g-4">
-
                     <div class="col-md-4">
                         <h2 class="titre-mission">
                             SAVOUREZ, ÉQUILIBREZ, PROFITEZ
                         </h2>
                     </div>
-
                     <div class="col-md-8">
                         <p class=" texte-mission ">
-                            Découvrez une sélection de menus équilibrés, savoureux et adaptés à tous les goûts. Que vous
-                            recherchiez une idée simple pour le quotidien ou un repas plus gourmand, nos suggestions
-                            vous permettent de varier votre alimentation tout en privilégiant des ingrédients frais et
-                            accessibles. Laissez-vous inspirer par nos différents menus et trouvez facilement le repas
-                            qui vous convient.
+                            Manger équilibré peut être simple et délicieux ! Découvrez des suggestions de menus
+                            adaptées à différentes envies : repas végétariens, idées familiales, petits-déjeuners
+                            nourrissants et plats gourmands. Variez vos assiettes, privilégiez des ingrédients
+                            frais et trouvez l'inspiration pour chaque moment de la journée.
                         </p>
                     </div>
-
                 </div>
             </div>
         </section>
 
         <section class="py-5">
             <div class="container">
-
-                <h2 class="text-center mb-4">Nos menus</h2>
-
+                <h2 class="text-center mb-4">Des menus pour toutes vos envies</h2>
                 <div class="row g-4">
 
                     <!-- Carte 1 -->
+
                     <div class="col-md-3">
                         <div class="card carte-menu">
                             <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/summer-alcoholic-drinks-at-the-bar-7LqMMWUOPgEEBwxp0LA8L.webp"
-                                class="card-img-top" alt="Menu 1">
-
+                                class="card-img-top" alt="Boissons colorées">
                             <div class="card-body">
                                 <h5 class="card-title">Menu équilibré</h5>
                                 <p class="card-text">
-                                    Un menu simple et équilibré pour bien commencer la journée.
+                                    Des idées variées pour composer des repas équilibrés et pleins de saveurs.
                                 </p>
                                 <a href="#" class="btn btn-primary">Découvrir</a>
                             </div>
@@ -199,15 +196,16 @@
                     </div>
 
                     <!-- Carte 2 -->
+
                     <div class="col-md-3">
                         <div class="card carte-menu">
                             <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/girl-drinking-a-beer-FcNV4F44K2qfRDIBv0WBD.webp"
-                                class="card-img-top" alt="Menu 2">
+                                class="card-img-top" alt="Boisson dégustée au verre">
 
                             <div class="card-body">
                                 <h5 class="card-title">Menu végétarien</h5>
                                 <p class="card-text">
-                                    Des légumes et des ingrédients savoureux pour un repas léger.
+                                    Des idées riches en légumes et en couleurs pour varier les plaisirs.
                                 </p>
                                 <a href="#" class="btn btn-primary">Découvrir</a>
                             </div>
@@ -215,15 +213,16 @@
                     </div>
 
                     <!-- Carte 3 -->
+
                     <div class="col-md-3">
                         <div class="card carte-menu">
                             <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/bartender-licor-beirao-AI03mOKjWAEhuzFpAwvjC.webp"
-                                class="card-img-top" alt="Menu 3">
+                                class="card-img-top" alt="Préparation d'une boisson">
 
                             <div class="card-body">
                                 <h5 class="card-title">Menu familial</h5>
                                 <p class="card-text">
-                                    Des recettes gourmandes et faciles à partager en famille.
+                                    Des repas généreux et faciles à partager avec ceux que vous aimez.
                                 </p>
                                 <a href="#" class="btn btn-primary">Découvrir</a>
                             </div>
@@ -231,79 +230,80 @@
                     </div>
 
                     <!-- Carte 4 -->
+
                     <div class="col-md-3">
                         <div class="card carte-menu">
                             <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/fresh-vegetables-for-preparing-sandwiches-kp58lcOaghKooq_c36kkY.webp"
-                                class="card-img-top" alt="Menu 4">
+                                class="card-img-top" alt="Légumes frais pour préparer des sandwichs">
 
                             <div class="card-body">
                                 <h5 class="card-title">Menu gourmand</h5>
                                 <p class="card-text">
-                                    Des recettes savoureuses pour profiter pleinement du repas.
+                                    Des recettes savoureuses pour se faire plaisir tout en variant son alimentation.
                                 </p>
                                 <a href="#" class="btn btn-primary">Découvrir</a>
                             </div>
                         </div>
                     </div>
 
-                                       <!-- Carte 5 -->
+                    <!-- Carte 5 -->
+
                     <div class="col-md-3">
                         <div class="card carte-menu">
                             <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/fresh-vegetables-for-preparing-sandwiches-kp58lcOaghKooq_c36kkY.webp"
-                                class="card-img-top" alt="Menu 4">
-
+                                class="card-img-top" alt="Légumes frais et ingrédients pour un repas équilibré">
                             <div class="card-body">
-                                <h5 class="card-title">Menu gourmand</h5>
+                                <h5 class="card-title">Menu express</h5>
                                 <p class="card-text">
-                                    Des recettes savoureuses pour profiter pleinement du repas.
+                                    Des inspirations simples pour préparer un repas savoureux même quand le temps manque.
                                 </p>
                                 <a href="#" class="btn btn-primary">Découvrir</a>
                             </div>
                         </div>
                     </div>
 
-                                       <!-- Carte 6 -->
+                    <!-- Carte 6 -->
+
                     <div class="col-md-3">
                         <div class="card carte-menu">
                             <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/czech-lager-beer-from-the-tap-ojH7IRohojWeqFfVfjl0s.webp"
-                                class="card-img-top" alt="Menu 4">
-
+                                class="card-img-top" alt="Boisson servie au verre">
                             <div class="card-body">
-                                <h5 class="card-title">Menu gourmand</h5>
+                                <h5 class="card-title">Pause fraîcheur</h5>
                                 <p class="card-text">
-                                    Des recettes savoureuses pour profiter pleinement du repas.
+                                    Des idées de boissons et de petites pauses pour accompagner vos journées.
                                 </p>
                                 <a href="#" class="btn btn-primary">Découvrir</a>
                             </div>
                         </div>
                     </div>
 
-                                       <!-- Carte 7 -->
+                    <!-- Carte 7 -->
+
                     <div class="col-md-3">
                         <div class="card carte-menu">
                             <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/water-with-mint-in-a-jug-vAzVJDEjJV0nzl9T_8MZ0.webp"
-                                class="card-img-top" alt="Menu 4">
-
+                                class="card-img-top" alt="Eau fraîche parfumée à la menthe">
                             <div class="card-body">
-                                <h5 class="card-title">Menu gourmand</h5>
+                                <h5 class="card-title">Boissons maison</h5>
                                 <p class="card-text">
-                                    Des recettes savoureuses pour profiter pleinement du repas.
+                                    Rafraîchissez-vous avec des boissons simples, fruitées et pleines de fraîcheur.
                                 </p>
                                 <a href="#" class="btn btn-primary">Découvrir</a>
                             </div>
                         </div>
                     </div>
 
-                                       <!-- Carte 8 -->
+                    <!-- Carte 8 -->
+
                     <div class="col-md-3">
                         <div class="card carte-menu">
                             <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/purple-and-green-mix-of-kohlrabi-EmvbO7EdjERP0qa1gInsS.webp"
-                                class="card-img-top" alt="Menu 4">
-
+                                class="card-img-top" alt="Chou-rave violet et vert">
                             <div class="card-body">
-                                <h5 class="card-title">Menu gourmand</h5>
+                                <h5 class="card-title">Légumes de saison</h5>
                                 <p class="card-text">
-                                    Des recettes savoureuses pour profiter pleinement du repas.
+                                    Mettez les légumes à l'honneur avec des idées colorées et faciles à cuisiner.
                                 </p>
                                 <a href="#" class="btn btn-primary">Découvrir</a>
                             </div>
@@ -311,6 +311,121 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="container py-5">
+
+            <!-- Titre de la section -->
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Un peu d'inspiration dans votre assiette</h2>
+                <p>Des idées gourmandes pour manger varié et équilibré.</p>
+            </div>
+
+            <!-- Première grille principale -->
+
+            <div class="row g-4">
+
+                <!-- COLONNE GAUCHE : GRANDE RECETTE -->
+
+                <div class="col-md-6">
+                    <div class="bento-item ratio ratio-4x3">
+                        <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/colorful-breakfast-spread-on-a-rustic-plate-VGbHfppD0Pq-q4gtkxTDo.webp"
+                            class="bento-image" alt="Petit-déjeuner varié avec plusieurs aliments colorés">
+                        <div class="bento-overlay d-flex align-items-center justify-content-center">
+                            <span class="text-white fw-bold fs-3 text-center">
+                                Un petit-déjeuner plein de couleurs
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLONNE DROITE : GRILLE IMBRIQUÉE -->
+
+                <div class="col-md-6">
+
+                    <div class="row g-4">
+
+                        <!-- IMAGE 2 -->
+                        <div class="col-6">
+
+                            <div class="bento-item ratio ratio-1x1">
+
+                                <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/mediterranean-meatballs-with-rice-and-fresh-vegetables-KogEOoEaclqrHyZUW3CU8.webp"
+                                    class="bento-image" alt="Boulettes de viande accompagnées de riz et de légumes frais">
+
+                                <div class="bento-overlay d-flex align-items-center justify-content-center">
+                                    <span class="text-white fw-bold fs-5 text-center">
+                                        Saveurs méditerranéennes
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- IMAGE 3 -->
+                        <div class="col-6">
+
+                            <div class="bento-item ratio ratio-1x1">
+
+                                <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/fancy-ice-cream-dessert-Gc1Cg4nVXctqNdEGIELAm.webp"
+                                    class="bento-image" alt="Dessert glacé présenté avec soin">
+
+                                <div class="bento-overlay d-flex align-items-center justify-content-center">
+                                    <span class="text-white fw-bold fs-5 text-center">
+                                        Une touche de douceur
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- IMAGE 4 -->
+                        <div class="col-6">
+
+                            <div class="bento-item ratio ratio-1x1">
+
+                                <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/colorful-sushi-roll-held-with-chopsticks-lz7wyWcXA1PUXVwFHipPQ.webp"
+                                    class="bento-image" alt="Sushis colorés servis avec des baguettes">
+
+                                <div class="bento-overlay d-flex align-items-center justify-content-center">
+                                    <span class="text-white fw-bold fs-5 text-center">
+                                        Des sushis tout en couleurs
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- IMAGE 5 -->
+                        <div class="col-6">
+
+                            <div class="bento-item ratio ratio-1x1">
+
+                                <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/water-with-mint-in-a-jug-vAzVJDEjJV0nzl9T_8MZ0.webp"
+                                    class="bento-image" alt="Eau fraîche agrémentée de feuilles de menthe">
+
+                                <div class="bento-overlay d-flex align-items-center justify-content-center">
+                                    <span class="text-white fw-bold fs-5 text-center">
+                                        Une pause rafraîchissante
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- DEUXIÈME LIGNE DE LA GRILLE PRINCIPALE -->
+
+            </div>
+
         </section>
 
         <section class="py-5">
@@ -321,21 +436,22 @@
 
                         <div class="col-md-6">
                             <img src="https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/breakfast-sandwich-with-hummus-spread-and-fresh-vegetables-ObbmS1t9tNapErnRkLh__.webp"
-                                class="img-fluid rounded-0" alt="Description de l'image">
+                                class="img-fluid rounded-0" alt="Sandwich au houmous et aux légumes frais">
                         </div>
 
                         <div class="col-md-6 dr-carte">
                             <div class="card-body">
-                                <h5 class="card-title">Des repas sains au quotidien</h5>
+                                <h5 class="card-title">Des repas sains, simplement</h5>
 
                                 <p class="card-text">
-                                    Découvrez des recettes simples, équilibrées et savoureuses, préparées avec des
-                                    ingrédients frais et accessibles. Des idées gourmandes pour prendre soin de votre
-                                    alimentation sans sacrifier le plaisir
+                                    Découvrez comment préparer des repas savoureux à partir d'ingrédients simples
+                                    et accessibles. Des sandwichs colorés aux assiettes équilibrées, trouvez des
+                                    inspirations pour varier vos repas et faire de chaque journée une occasion
+                                    de bien manger.
                                 </p>
 
                                 <p class="card-text">
-                                    <a href="#" class="btn btn-primary">Découvrir</a>
+                                    <a href="#" class="btn btn-primary">Explorer nos idées</a>
                                 </p>
                             </div>
                         </div>
@@ -347,129 +463,116 @@
         </section>
 
     </main>
-   
-<footer class="bg-dark text-white">
-    <div class="container py-5">
 
-        <div class="row">
+    <footer class="bg-dark text-white">
+        <div class="container py-5">
 
-            <!-- Logo / description -->
-            <div class="col-md-4">
-                <h2 class="h4">RecetteSanté</h2>
+            <div class="row">
 
-                <p>
-                    Des recettes simples et équilibrées
-                    pour une alimentation saine au quotidien.
-                </p>
+                <!-- Logo / description -->
+                <div class="col-md-4">
+                    <h2 class="h4">RecetteSanté <img src="images/logo2.png" alt="" width="55" height="55"></h2>
+
+                    <p>
+                        Des recettes accessibles, des menus équilibrés et des idées gourmandes
+                        pour vous accompagner vers une alimentation variée au quotidien.
+                    </p>
+                </div>
+
+                <!-- Liens -->
+                <div class="col-md-4">
+                    <h2 class="h5">Explorez notre site</h2>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-white">
+                                Accueil
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-white">
+                                Nos recettes
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-white">
+                                Nos menus
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4">
+                    <h2 class="h5">Contactez-nous</h2>
+                    <p class="mb-1">Québec, Canada</p>
+                    <p class="mb-1"><i class="bi bi-telephone-forward"></i> 418-000-0000</p>
+                    <p><i class="bi bi-envelope"></i> info@recettessante.ca</p>
+                </div>
+
             </div>
 
-            <!-- Liens -->
-            <div class="col-md-4">
-                <h2 class="h5">Liens rapides</h2>
+            <hr>
 
-                <ul class="list-unstyled">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0">
+                    © 2026 Recettes Santé — Guillaume Pefouho Lemela et Christ Brandon Kengne
+                </p>
+
+                <ul class="d-flex gap-3 list-unstyled mb-0">
                     <li>
-                        <a href="#" class="text-white">
-                            Accueil
+                        <a href="#" class="text-white" aria-label="Facebook">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#" class="text-white">
-                            Recettes
+                        <a href="#" class="text-white" aria-label="YouTube">
+                            <i class="bi bi-caret-right-square-fill" aria-hidden="true"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#" class="text-white">
-                            À propos
+                        <a href="#" class="text-white" aria-label="Messenger">
+                            <i class="bi bi-messenger" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-white" aria-label="X (Twitter)">
+                            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-white" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-white" aria-label="Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
+
             </div>
 
-            <!-- Contact -->
-            <div class="col-md-4">
-                <h2 class="h5">Nous joindre</h2>
-
-                <p class="mb-1">Québec, Canada</p>
-                <p class="mb-1"><i class="bi bi-telephone-forward"></i>  418-000-0000</p>
-                <p><i class="bi bi-envelope"></i>  info@recettessante.ca</p>
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="d-flex justify-content-between align-items-center">
-            <p class="mb-0">
-                © 2026 Recettes Santé
-            </p>
-
-            <ul class="d-flex gap-3 list-unstyled mb-0">
-    <li>
-        <a href="#" class="text-white">
-            <i class="bi bi-facebook"></i>
-        </a>
-    </li>
-
-    <li>
-        <a href="#" class="text-white">
-            <i class="bi bi-caret-right-square-fill"></i>
-        </a>
-    </li>
-
-    <li>
-        <a href="#" class="text-white">
-            <i class="bi bi-messenger"></i>
-        </a>
-    </li>
-
-    <li>
-        <a href="#" class="text-white">
-            <i class="bi bi-twitter-x"></i>
-        </a>
-    </li>
-
-    <li>
-        <a href="#" class="text-white">
-            <i class="bi bi-linkedin"></i>
-        </a>
-    </li>
-
-    <li>
-        <a href="#" class="text-white">
-            <i class="bi bi-instagram"></i>
-        </a>
-    </li>
-</ul>
-        </div>
-
-        </div>
-        </nav>
-    </header>
-    <main class="flex-grow-1">
-
-
-
-    </main>
-    <footer class="fond_section_primaire">
-        <div class="container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iste nobis quibusdam beatae ipsa quo
-                facere
-                nesciunt laudantium nemo, recusandae natus nostrum? At alias quisquam possimus suscipit ratione vel
-                voluptatibus.</p>
         </div>
     </footer>
-
+<a href="#" class="btn btn-retour-haut rounded-circle position-fixed bottom-0 end-0 m-4" aria-label="Retour en haut">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+</a>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
-<section class="col-3"></section>
-</body>
 
+</body>
 
 </html>
